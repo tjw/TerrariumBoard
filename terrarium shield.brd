@@ -517,7 +517,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="68.58" y="52.07"/>
 </polygon>
 <contactref element="C2" pad="2"/>
-<contactref element="U$1" pad="GND"/>
 <contactref element="PILLAR4" pad="GND"/>
 <contactref element="PILLAR3" pad="GND"/>
 <contactref element="PILLAR2" pad="GND"/>
@@ -531,6 +530,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LED0" pad="GND"/>
 <contactref element="TEMP_HUM" pad="GND"/>
 <contactref element="RESET" pad="T1"/>
+<contactref element="U$1" pad="GND1"/>
+<contactref element="U$1" pad="GND"/>
 </signal>
 <signal name="+5V" class="1">
 <contactref element="U$1" pad="VIN"/>
@@ -612,9 +613,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.67" y1="6.35" x2="31.75" y2="6.35" width="0.762" layer="1"/>
 <wire x1="31.75" y1="6.35" x2="33.02" y2="5.08" width="0.762" layer="1"/>
 <wire x1="33.02" y1="5.08" x2="33.02" y2="2.54" width="0.762" layer="1"/>
-</signal>
-<signal name="GND1">
-<contactref element="U$1" pad="GND1"/>
 </signal>
 <signal name="5V">
 <contactref element="U$1" pad="5V"/>

@@ -1179,6 +1179,7 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <part name="PILLAR4" library="tjw" deviceset="MOLEX_3PIN_VERT_THM" device=""/>
 <part name="R2" library="tjw" deviceset="RESISTOR_US_THM" device="" value="10k"/>
 <part name="RESET" library="tjw" deviceset="TACTILE_BUTTON_THM" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1231,6 +1232,7 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <instance part="PILLAR4" gate="G$1" x="198.12" y="200.66"/>
 <instance part="R2" gate="G$1" x="50.8" y="25.4"/>
 <instance part="RESET" gate="G$1" x="33.02" y="35.56"/>
+<instance part="GND16" gate="1" x="15.24" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -1259,6 +1261,10 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <wire x1="63.5" y1="58.42" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="63.5" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<wire x1="66.04" y1="58.42" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<junction x="60.96" y="50.8"/>
 </segment>
 <segment>
 <pinref part="PILLAR4" gate="G$1" pin="GND"/>
@@ -1319,6 +1325,13 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <pinref part="TEMP_HUM" gate="G$1" pin="GND"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="-78.74" y1="190.5" x2="-78.74" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="45.72" y1="119.38" x2="45.72" y2="127" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="15.24" y1="127" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="1">
