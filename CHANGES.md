@@ -37,4 +37,6 @@
 
 ### Problems fixed
 - Through holes for DC jack too small: fixed in library and then removed from this board since we'll get power from VIN.
-
+- Increased pad size for resistor component from `auto` to 1.2.
+- Moved name/version to the tNames layer instead of tSilk.
+- Smashed the capacitor and fixed the name size
