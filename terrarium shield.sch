@@ -825,8 +825,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <text x="5.08" y="-2.54" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="RESISTOR_THM">
-<pad name="P$1" x="-4.44" y="0" drill="0.8"/>
-<pad name="P$2" x="4.44" y="-0.1" drill="0.8"/>
+<pad name="P$1" x="-4.44" y="0" drill="0.8" diameter="1.5"/>
+<pad name="P$2" x="4.44" y="-0.1" drill="0.8" diameter="1.5"/>
 <wire x1="-3.3" y1="1.2" x2="-3.3" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="-1.2" x2="3.3" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="3.3" y1="-1.2" x2="3.3" y2="1.2" width="0.127" layer="21"/>

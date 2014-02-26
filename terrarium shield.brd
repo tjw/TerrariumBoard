@@ -9,7 +9,7 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
@@ -251,8 +251,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="5.08" y="-2.54" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="RESISTOR_THM">
-<pad name="P$1" x="-4.44" y="0" drill="0.8"/>
-<pad name="P$2" x="4.44" y="-0.1" drill="0.8"/>
+<pad name="P$1" x="-4.44" y="0" drill="0.8" diameter="1.5"/>
+<pad name="P$2" x="4.44" y="-0.1" drill="0.8" diameter="1.5"/>
 <wire x1="-3.3" y1="1.2" x2="-3.3" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="-1.2" x2="3.3" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="3.3" y1="-1.2" x2="3.3" y2="1.2" width="0.127" layer="21"/>

@@ -32,3 +32,9 @@
   - Ground all connected, top and bottom
   - 5V all connected to VIN, top and bottom
   - Signal pins connected, top and bottom
+
+## vA.2
+
+### Problems fixed
+- Through holes for DC jack too small: fixed in library and then removed from this board since we'll get power from VIN.
+
