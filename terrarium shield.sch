@@ -803,26 +803,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <rectangle x1="-6.35" y1="31.75" x2="10.16" y2="44.196" layer="48"/>
 <rectangle x1="-1.778" y1="3.81" x2="11.938" y2="12.7" layer="48"/>
 </package>
-<package name="2.1MM_DC_JACK">
-<wire x1="0" y1="0" x2="0" y2="14.4" width="0" layer="21"/>
-<wire x1="0" y1="14.4" x2="9" y2="14.4" width="0" layer="25"/>
-<wire x1="9" y1="14.4" x2="9" y2="0" width="0" layer="21"/>
-<wire x1="9" y1="0" x2="0" y2="0" width="0" layer="27"/>
-<pad name="CON" x="-0.1" y="3.7" drill="0.8" shape="square"/>
-<pad name="+V" x="4.6" y="0.7" drill="0.8" shape="square"/>
-<pad name="GND" x="4.6" y="6.7" drill="0.8" shape="square"/>
-<text x="4.37" y="3.27" size="0.8128" layer="51" align="center">+V</text>
-<text x="3.2" y="8.4" size="0.8128" layer="51">GND</text>
-<text x="1.1" y="4.8" size="0.8128" layer="51" rot="R270">CON</text>
-<text x="1.7" y="13.1" size="0.8128" layer="51">2.1mm plug</text>
-<text x="1.27" y="15.24" size="1.27" layer="21">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="1.27" layer="21">&gt;VALUE</text>
-<wire x1="4.6" y1="12.8" x2="4.6" y2="11.9" width="0.127" layer="51"/>
-<wire x1="4.6" y1="11.9" x2="5.2" y2="11.9" width="0.127" layer="51"/>
-<wire x1="5.2" y1="11.9" x2="4.6" y2="10.9" width="0.127" layer="51"/>
-<wire x1="4.6" y1="10.9" x2="4.1" y2="11.9" width="0.127" layer="51"/>
-<wire x1="4.1" y1="11.9" x2="4.6" y2="11.9" width="0.127" layer="51"/>
-</package>
 <package name="MOLEX_3PIN_VERT_THM">
 <wire x1="0" y1="0" x2="1.6" y2="0" width="0.127" layer="21"/>
 <wire x1="1.6" y1="0" x2="2.2" y2="0" width="0.127" layer="21"/>
@@ -922,32 +902,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pin name="SCL" x="7.62" y="55.88" visible="pin" length="middle" rot="R270"/>
 <pin name="SDA" x="10.16" y="55.88" visible="pin" length="middle" rot="R270"/>
 </symbol>
-<symbol name="2.1MM_DC_JACK">
-<pin name="+V" x="5.08" y="5.08" length="middle" rot="R180"/>
-<pin name="CON" x="5.08" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<wire x1="0" y1="7.62" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.048" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="3.048" x2="-2.54" y2="7.112" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.112" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.112" x2="-11.938" y2="7.112" width="0.254" layer="94"/>
-<wire x1="-11.938" y1="7.112" x2="-11.938" y2="3.048" width="0.254" layer="94" curve="180"/>
-<wire x1="-11.938" y1="3.048" x2="-2.54" y2="3.048" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-5.588" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.588" y1="-5.08" x2="-7.62" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.794" x2="-9.652" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-0.762" x2="-8.382" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-8.382" y1="-0.762" x2="-7.62" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.286" x2="-6.858" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-6.858" y1="-0.762" x2="-7.62" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="5.588" width="0.254" layer="94"/>
-<wire x1="1.524" y1="6.604" x2="3.556" y2="6.604" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
-</symbol>
 <symbol name="MOLEX_#PIN_VERT_THM">
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
@@ -1036,26 +990,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2.1MM_DC_JACK">
-<description>2.1mm DC Jack from Adafruit
-
-http://www.adafruit.com/products/373</description>
-<gates>
-<gate name="G$1" symbol="2.1MM_DC_JACK" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="2.1MM_DC_JACK">
-<connects>
-<connect gate="G$1" pin="+V" pad="+V"/>
-<connect gate="G$1" pin="CON" pad="CON"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1164,7 +1098,6 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="tjw" deviceset="ARDUINO_UNO_R3" device=""/>
-<part name="5V_DC" library="tjw" deviceset="2.1MM_DC_JACK" device=""/>
 <part name="TEMP_HUM" library="tjw" deviceset="MOLEX_3PIN_VERT_THM" device=""/>
 <part name="LED0" library="tjw" deviceset="MOLEX_3PIN_VERT_THM" device=""/>
 <part name="LED1" library="tjw" deviceset="MOLEX_3PIN_VERT_THM" device=""/>
@@ -1217,7 +1150,6 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <instance part="GND14" gate="1" x="-78.74" y="180.34"/>
 <instance part="GND15" gate="1" x="15.24" y="25.4"/>
 <instance part="U$1" gate="G$1" x="30.48" y="63.5"/>
-<instance part="5V_DC" gate="G$1" x="-33.02" y="63.5" rot="MR270"/>
 <instance part="TEMP_HUM" gate="G$1" x="-78.74" y="200.66"/>
 <instance part="LED0" gate="G$1" x="-48.26" y="200.66"/>
 <instance part="LED1" gate="G$1" x="-22.86" y="200.66"/>
@@ -1242,13 +1174,8 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-25.4" y1="38.1" x2="-25.4" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="5V_DC" gate="G$1" pin="GND"/>
-<wire x1="-27.94" y1="58.42" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="53.34" x2="-30.48" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="53.34" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="-30.48" y1="45.72" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-30.48" y="45.72"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
@@ -1339,11 +1266,8 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-45.72" y1="50.8" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="5V_DC" gate="G$1" pin="+V"/>
-<wire x1="-38.1" y1="58.42" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="-38.1" y1="45.72" x2="-38.1" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-38.1" y="45.72"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -1544,7 +1468,6 @@ Dimensions should be good, but pad placement just tossed in there.</description>
 </sheets>
 <errors>
 <approved hash="104,1,68.58,58.42,U$1,VIN,+5V,,,"/>
-<approved hash="204,1,66.04,58.42,U$1,GND1,,,,"/>
 <approved hash="104,1,63.5,58.42,U$1,GND2,GND,,,"/>
 <approved hash="204,1,60.96,58.42,U$1,5V,,,,"/>
 <approved hash="204,1,58.42,58.42,U$1,3V,,,,"/>
