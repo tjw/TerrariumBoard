@@ -249,6 +249,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="1.6" y1="0" x2="1.6" y2="6.7" width="0.127" layer="21" style="shortdash"/>
 <wire x1="8.2" y1="0" x2="8.2" y2="6.7" width="0.127" layer="21" style="shortdash"/>
 <text x="5.08" y="-2.54" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="2" y="5.3" size="1.27" layer="21">+</text>
+<text x="4.5" y="5.3" size="1.27" layer="21">-</text>
+<text x="6.9" y="5.2" size="1.27" layer="21">S</text>
 </package>
 <package name="RESISTOR_THM">
 <pad name="P$1" x="-4.44" y="0" drill="0.8" diameter="1.5"/>

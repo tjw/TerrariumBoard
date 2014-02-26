@@ -40,3 +40,8 @@
 - Increased pad size for resistor component from `auto` to 1.2.
 - Moved name/version to the tNames layer instead of tSilk.
 - Smashed the capacitor and fixed the name size
+- Added +/-/S markings to Molex connector component
+
+### Not fixed
+- Missing values -- none of the values showed up; presumably they don't print tValues.
+- Markers on DC jack didn't show up; removed the DC jack instead
