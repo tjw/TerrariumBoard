@@ -1,4 +1,17 @@
-## vA.1
+# vA.2
+
+### Problems fixed
+- Through holes for DC jack too small: fixed in library and then removed from this board since we'll get power from VIN.
+- Increased pad size for resistor component from `auto` to 1.2.
+- Moved name/version to the tNames layer instead of tSilk.
+- Smashed the capacitor and fixed the name size
+- Added +/-/S markings to Molex connector component
+
+### Not fixed
+- Missing values -- none of the values showed up; presumably they don't print tValues.
+- Markers on DC jack didn't show up; removed the DC jack instead
+
+# vA.1
 
 - Sent to OSH Park 2014-02-15
 - Boards shipped 2014-02-21
@@ -32,16 +45,3 @@
   - Ground all connected, top and bottom
   - 5V all connected to VIN, top and bottom
   - Signal pins connected, top and bottom
-
-## vA.2
-
-### Problems fixed
-- Through holes for DC jack too small: fixed in library and then removed from this board since we'll get power from VIN.
-- Increased pad size for resistor component from `auto` to 1.2.
-- Moved name/version to the tNames layer instead of tSilk.
-- Smashed the capacitor and fixed the name size
-- Added +/-/S markings to Molex connector component
-
-### Not fixed
-- Missing values -- none of the values showed up; presumably they don't print tValues.
-- Markers on DC jack didn't show up; removed the DC jack instead
