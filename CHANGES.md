@@ -17,7 +17,13 @@
 - Boards shipped 2014-02-21
 - Boards received 2014-02-24
 
+### Notes
+- Since the DC jack didn't fit, tried running w/o it. This worked (sourcing current from VIN). But with 200 LEDs at maximum brightness the board started to smoke. VIN is rated for much less current. So, the DC jack will be needed!
+
 ### Problems/changes to make:
+- Need much bigger pads for DC power jack
+- Should make the board bigger than an Arduino shield to make room for stuff
+- Vertical connectors are kinda terrible.
 - Name/version didn't print on silk screen
 - Through holes for DC jack too small
 - Probably didn't need to put DC jack on board; can use VIN from Arduino base
@@ -27,6 +33,8 @@
 - Name on capacitor too small
 - Value on capacitor didn't show up at all
 - Only one of the GND pins on the shield is connected to the ground pour. Hopefully not a blocking issue...
+- Move data line resistors to the board to avoid needing them on LED strips
+- Switch to full custom AVR board with programmer, or to adding headers for Spark Core, maybe with separate power regulator for LEDs.
 
 ### To check:
   
