@@ -1,11 +1,11 @@
 # vA.2
 
 ### Problems fixed
-- Through holes for DC jack too small: fixed in library and then removed from this board since we'll get power from VIN.
 - Increased pad size for resistor component from `auto` to 1.2.
 - Moved name/version to the tNames layer instead of tSilk.
 - Smashed the capacitor and fixed the name size
 - Added +/-/S markings to Molex connector component
+- Made footprints for Molex Sabre power connector and Molex 4365-310 right angle connectors
 
 ### Not fixed
 - Missing values -- none of the values showed up; presumably they don't print tValues.
@@ -21,6 +21,18 @@
 - Since the DC jack didn't fit, tried running w/o it. This worked (sourcing current from VIN). But with 200 LEDs at maximum brightness the board started to smoke. VIN is rated for much less current. So, the DC jack will be needed!
 
 ### Problems/changes to make:
+- Replaced DC jack with Molex Sabre connector (rated for 18A instead of 5A for DC barrel jack)
+- Test using A0-A7 for digital output on Spark Core. Supposedly works.
+- Sparkcore 3.3V, not 5V. Recommended to use a 5V device (or make signal 70% of power). Need to add logic level converters.
+  - *Probably* don't need a level shifter with newer strips. See http://forums.adafruit.com/viewtopic.php?f=47&t=47420&hilit=grumpy&start=15 for info about "grumpy" strips and using non-"grumpy" pixels as level shifters
+  - Maybe run at 400kHz instead of 800kHz
+  - Post on testing level shifters for Teensy -> NeoPixel http://happyinmotion.com/?p=1247
+  
+- Order some female 0.1" headers (Adafruit http://www.adafruit.com/products/598) for Spark Core rather than soldering built-in headers directly to board
+- Mock up board
+- Wait for orders from Mouser
+- Make footprints for right angle plugs
+- Rearrange wire order to match that of LED strips
 - Need much bigger pads for DC power jack
 - Should make the board bigger than an Arduino shield to make room for stuff
 - Vertical connectors are kinda terrible.
