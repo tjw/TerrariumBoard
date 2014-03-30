@@ -128,6 +128,8 @@
 <wire x1="84.76" y1="80.04" x2="0" y2="80.04" width="0" layer="20"/>
 <wire x1="0" y1="80.04" x2="0" y2="0" width="0" layer="20"/>
 <text x="14.6" y="31.3" size="1.778" layer="25">SPARK</text>
+<text x="1.6" y="52.6" size="1.778" layer="25">Terrarium v2</text>
+<text x="1.6" y="49.7" size="1.778" layer="25">2014-03-29</text>
 </plain>
 <libraries>
 <library name="tjw">
