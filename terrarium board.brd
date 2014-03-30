@@ -1042,6 +1042,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$26">
 <contactref element="SHIFT2" pad="13"/>
+<contactref element="SPARK" pad="D6"/>
+<wire x1="16.1815" y1="40.745" x2="25.285" y2="47.84" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

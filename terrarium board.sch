@@ -1863,7 +1863,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </plain>
 <instances>
 <instance part="POWER" gate="G$1" x="121.92" y="35.56" rot="MR180"/>
-<instance part="SPARK" gate="G$1" x="320.04" y="-53.34"/>
+<instance part="SPARK" gate="G$1" x="317.5" y="-53.34"/>
 <instance part="R1" gate="G$1" x="119.38" y="101.6" rot="R90"/>
 <instance part="LED0" gate="G$1" x="119.38" y="129.54"/>
 <instance part="LED1" gate="G$1" x="147.32" y="129.54"/>
@@ -1924,7 +1924,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="SHIFT2" gate="G$1" x="393.7" y="-2.54" rot="R270"/>
 <instance part="GND14" gate="1" x="363.22" y="-10.16"/>
 <instance part="GND19" gate="1" x="208.28" y="-7.62"/>
-<instance part="C2" gate="G$1" x="287.02" y="2.54"/>
+<instance part="C2" gate="G$1" x="284.48" y="2.54"/>
 <instance part="C3" gate="G$1" x="436.88" y="0"/>
 <instance part="R7" gate="G$1" x="317.5" y="106.68" rot="R90"/>
 </instances>
@@ -2008,7 +2008,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </segment>
 <segment>
 <pinref part="SPARK" gate="G$1" pin="VIN"/>
-<wire x1="302.26" y1="-35.56" x2="292.1" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-35.56" x2="292.1" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -2016,7 +2016,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="276.86" y1="12.7" x2="276.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="7.62" x2="266.7" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="276.86" y1="7.62" x2="287.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="7.62" x2="284.48" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -2079,12 +2079,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="SPARK" gate="G$1" pin="GND"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="302.26" y1="-40.64" x2="292.1" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-40.64" x2="292.1" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SPARK" gate="G$1" pin="GND2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="337.82" y1="-50.8" x2="347.98" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-50.8" x2="347.98" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -2094,7 +2094,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="276.86" y1="0" x2="276.86" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="276.86" y="-7.62"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="0" x2="276.86" y2="0" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="0" x2="276.86" y2="0" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="DIR"/>
 <pinref part="SHIFT1" gate="G$1" pin="~OE"/>
 </segment>
@@ -2277,118 +2277,113 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="N$30" class="0">
 <segment>
-<wire x1="335.28" y1="-86.36" x2="337.82" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-86.36" x2="411.48" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-86.36" x2="411.48" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="411.48" y1="-86.36" x2="411.48" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="B1"/>
 <wire x1="411.48" y1="-22.86" x2="411.48" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="411.48" y="-22.86"/>
 <pinref part="SPARK" gate="G$1" pin="D1"/>
-<junction x="337.82" y="-86.36"/>
+<junction x="335.28" y="-86.36"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<wire x1="335.28" y1="-71.12" x2="337.82" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-71.12" x2="396.24" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-71.12" x2="396.24" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="-71.12" x2="396.24" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="B4"/>
 <wire x1="396.24" y1="-22.86" x2="396.24" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="396.24" y="-22.86"/>
 <pinref part="SPARK" gate="G$1" pin="D4"/>
-<junction x="337.82" y="-71.12"/>
+<junction x="335.28" y="-71.12"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="335.28" y1="-81.28" x2="337.82" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-81.28" x2="406.4" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-81.28" x2="406.4" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="-81.28" x2="406.4" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="B2"/>
 <wire x1="406.4" y1="-22.86" x2="406.4" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="406.4" y="-22.86"/>
 <pinref part="SPARK" gate="G$1" pin="D2"/>
-<junction x="337.82" y="-81.28"/>
+<junction x="335.28" y="-81.28"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<wire x1="335.28" y1="-76.2" x2="337.82" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-76.2" x2="401.32" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-76.2" x2="401.32" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="-76.2" x2="401.32" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="B3"/>
 <wire x1="401.32" y1="-22.86" x2="401.32" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="401.32" y="-22.86"/>
 <pinref part="SPARK" gate="G$1" pin="D3"/>
-<junction x="337.82" y="-76.2"/>
+<junction x="335.28" y="-76.2"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<wire x1="335.28" y1="-66.04" x2="337.82" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-66.04" x2="391.16" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-66.04" x2="391.16" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="-66.04" x2="391.16" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="B5"/>
 <wire x1="391.16" y1="-22.86" x2="391.16" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="391.16" y="-22.86"/>
 <pinref part="SPARK" gate="G$1" pin="D5"/>
-<junction x="337.82" y="-66.04"/>
+<junction x="335.28" y="-66.04"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<wire x1="304.8" y1="-91.44" x2="302.26" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-91.44" x2="223.52" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-91.44" x2="299.72" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-91.44" x2="223.52" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="-91.44" x2="223.52" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B8"/>
 <pinref part="SPARK" gate="G$1" pin="A0"/>
-<junction x="302.26" y="-91.44"/>
+<junction x="299.72" y="-91.44"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<wire x1="304.8" y1="-86.36" x2="302.26" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-86.36" x2="228.6" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-86.36" x2="299.72" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-86.36" x2="228.6" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="-86.36" x2="228.6" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B7"/>
 <pinref part="SPARK" gate="G$1" pin="A1"/>
-<junction x="302.26" y="-86.36"/>
+<junction x="299.72" y="-86.36"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="SPARK" gate="G$1" pin="A2"/>
-<wire x1="302.26" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-81.28" x2="233.68" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B6"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<wire x1="304.8" y1="-76.2" x2="302.26" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-76.2" x2="238.76" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-76.2" x2="299.72" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-76.2" x2="238.76" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="-76.2" x2="238.76" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B5"/>
 <pinref part="SPARK" gate="G$1" pin="A3"/>
-<junction x="302.26" y="-76.2"/>
+<junction x="299.72" y="-76.2"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="SPARK" gate="G$1" pin="A4"/>
-<wire x1="302.26" y1="-71.12" x2="243.84" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-71.12" x2="243.84" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="-71.12" x2="243.84" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B4"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<wire x1="304.8" y1="-66.04" x2="302.26" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-66.04" x2="248.92" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-66.04" x2="299.72" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-66.04" x2="248.92" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="-66.04" x2="248.92" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="B3"/>
 <pinref part="SPARK" gate="G$1" pin="A5"/>
-<junction x="302.26" y="-66.04"/>
+<junction x="299.72" y="-66.04"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2407,7 +2402,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="307.34" y1="-22.86" x2="276.86" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="-22.86" x2="276.86" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="SPARK" gate="G$1" pin="A6"/>
-<wire x1="276.86" y1="-60.96" x2="302.26" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="-60.96" x2="299.72" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -2467,6 +2462,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="SHIFT2" gate="G$1" pin="B6"/>
 <wire x1="386.08" y1="-22.86" x2="386.08" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="-60.96" x2="335.28" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="SPARK" gate="G$1" pin="D6"/>
 </segment>
 </net>
 </nets>
