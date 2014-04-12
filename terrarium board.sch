@@ -129,7 +129,6 @@
 <package name="MOLEX_2PIN_SABRE_POWER">
 <wire x1="21.2" y1="14" x2="0" y2="14" width="0.127" layer="21"/>
 <wire x1="0" y1="14" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="21.2" y2="0" width="0.127" layer="21"/>
 <wire x1="21.2" y1="0" x2="21.2" y2="14" width="0.127" layer="21"/>
 <text x="10.6" y="15.59" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
 <text x="10.4" y="6.59" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
@@ -137,26 +136,28 @@
 <hole x="19.175" y="10.95" drill="2.55"/>
 <text x="1.27" y="-3.81" size="1.27" layer="21" align="bottom-center">GND</text>
 <text x="20.32" y="-3.81" size="1.27" layer="21" align="bottom-center">+V</text>
-<pad name="GND1" x="6.8" y="-1.7" drill="1.7" diameter="2.2" shape="long"/>
-<pad name="GND2" x="6.8" y="-4.8" drill="1.7" diameter="2.2" shape="long"/>
-<pad name="VCC1" x="14.4" y="-1.7" drill="1.7" diameter="2.2" shape="long"/>
-<pad name="VCC2" x="14.4" y="-4.8" drill="1.7" diameter="2.2" shape="long"/>
+<pad name="GND1" x="6.8" y="-1.7" drill="1.7" diameter="3.7" shape="square"/>
+<pad name="GND2" x="6.8" y="-4.8" drill="1.7" diameter="3.7" shape="square"/>
+<pad name="VCC1" x="14.4" y="-1.7" drill="1.7" diameter="3.7" shape="square"/>
+<pad name="VCC2" x="14.4" y="-4.8" drill="1.7" diameter="3.7" shape="square"/>
+<wire x1="0" y1="0" x2="4.4" y2="0" width="0.127" layer="21"/>
+<wire x1="9" y1="0" x2="12.2" y2="0" width="0.127" layer="21"/>
+<wire x1="21.2" y1="0" x2="16.6" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="MOLEX_3PIN_SMT_43650-310">
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="21"/>
 <wire x1="12.7" y1="9.85" x2="0" y2="9.85" width="0.127" layer="21"/>
-<rectangle x1="0.9" y1="4.3" x2="1.4" y2="6.6" layer="49"/>
-<rectangle x1="11.3" y1="4.3" x2="11.8" y2="6.6" layer="49"/>
-<hole x="1.15" y="5.45" drill="2.3"/>
+<hole x="1.15" y="5.45" drill="2.2"/>
 <text x="6.3" y="10.6" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-<hole x="11.55" y="5.5" drill="2.3"/>
-<smd name="VCC" x="3.35" y="-0.9" dx="1.6764" dy="0.8128" layer="1" rot="R90"/>
-<smd name="DIN" x="6.35" y="-0.9" dx="1.6764" dy="0.8128" layer="1" rot="R90"/>
-<smd name="GND" x="9.25" y="-0.9" dx="1.6764" dy="0.8128" layer="1" rot="R90"/>
+<hole x="11.55" y="5.5" drill="2.2"/>
+<smd name="VCC" x="3.35" y="-0.4" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+<smd name="DIN" x="6.35" y="-0.4" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+<smd name="GND" x="9.25" y="-0.4" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 <wire x1="0" y1="9.8" x2="0" y2="6.9" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="4" width="0.127" layer="21"/>
 <wire x1="12.7" y1="9.8" x2="12.7" y2="6.9" width="0.127" layer="21"/>
 <wire x1="12.7" y1="0" x2="12.7" y2="4" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="SPARKCORE">
 <wire x1="0" y1="0" x2="20.4" y2="0" width="0.127" layer="21"/>
@@ -1786,7 +1787,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="3.556" drill="0">
+<class number="1" name="power" width="1.524" drill="0">
 </class>
 </classes>
 <parts>
@@ -1862,7 +1863,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="264.16" y="93.98" size="1.778" layer="91">SPARK INPUT 5V TOLERANT</text>
 </plain>
 <instances>
-<instance part="POWER" gate="G$1" x="121.92" y="35.56" rot="MR180"/>
+<instance part="POWER" gate="G$1" x="119.38" y="35.56" rot="MR180"/>
 <instance part="SPARK" gate="G$1" x="317.5" y="-53.34"/>
 <instance part="R1" gate="G$1" x="119.38" y="101.6" rot="R90"/>
 <instance part="LED0" gate="G$1" x="119.38" y="129.54"/>
@@ -1898,7 +1899,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND10" gate="1" x="393.7" y="109.22"/>
 <instance part="GND11" gate="1" x="421.64" y="109.22"/>
 <instance part="GND12" gate="1" x="254" y="109.22"/>
-<instance part="GND13" gate="1" x="431.8" y="-15.24"/>
+<instance part="GND13" gate="1" x="431.8" y="-20.32"/>
 <instance part="GND15" gate="1" x="137.16" y="22.86"/>
 <instance part="GND16" gate="1" x="347.98" y="-53.34"/>
 <instance part="GND17" gate="1" x="292.1" y="-43.18"/>
@@ -1939,10 +1940,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="137.16" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="144.78" y1="40.64" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="POWER" gate="G$1" pin="VCC1"/>
 <pinref part="POWER" gate="G$1" pin="VCC2"/>
-<wire x1="134.62" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<junction x="137.16" y="43.18"/>
+<junction x="137.16" y="40.64"/>
 </segment>
 <segment>
 <pinref part="LED0" gate="G$1" pin="VCC"/>
@@ -2018,6 +2021,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="7.62" x2="284.48" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="VCC"/>
+<junction x="276.86" y="7.62"/>
 </segment>
 <segment>
 <wire x1="431.8" y1="10.16" x2="431.8" y2="5.08" width="0.1524" layer="91"/>
@@ -2026,6 +2030,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="431.8" y1="5.08" x2="436.88" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="VCC"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
+<junction x="431.8" y="5.08"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2097,6 +2102,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="284.48" y1="0" x2="276.86" y2="0" width="0.1524" layer="91"/>
 <pinref part="SHIFT1" gate="G$1" pin="DIR"/>
 <pinref part="SHIFT1" gate="G$1" pin="~OE"/>
+<junction x="276.86" y="0"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -2104,12 +2110,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="419.1" y1="-2.54" x2="431.8" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="-2.54" x2="431.8" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SHIFT2" gate="G$1" pin="~OE"/>
-<wire x1="431.8" y1="-10.16" x2="431.8" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="-10.16" x2="431.8" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="431.8" y1="-10.16" x2="431.8" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="-10.16" x2="431.8" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="431.8" y="-10.16"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="431.8" y1="-2.54" x2="436.88" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="431.8" y="-2.54"/>
 </segment>
 <segment>
 <pinref part="SHIFT1" gate="G$1" pin="GND"/>
@@ -2152,13 +2158,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="POWER" gate="G$1" pin="GND2"/>
 <pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="134.62" y1="30.48" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="30.48" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="POWER" gate="G$1" pin="GND1"/>
 <wire x1="137.16" y1="30.48" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="27.94" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="137.16" y1="27.94" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
+<junction x="137.16" y="30.48"/>
+<junction x="137.16" y="27.94"/>
 </segment>
 </net>
 <net name="N$6" class="0">

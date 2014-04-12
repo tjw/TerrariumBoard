@@ -1,3 +1,30 @@
+# v2
+
+### Redesigned to hold Spark
+
+- Sent to OSH Park 2014-03-29
+- Received 2014-04-09
+
+### Problems
+- Eagle didn't connect wire from the Spark side of the shifter circuit for PILLAR0
+- Pads for edge connectors not far enough under where pins are
+- Edge connectors for LED strips are not terribly stable; might need to glue them down. The holes are maybe too big or maybe the through pins are not long enough to click in
+- Some of the vias are pretty close to other solder pads... might be OK
+- Could maybe mount the big capacitor on its side
+- Could probably increase the size of the pads on the main power connector and run them together
+
+### Fixes
+- Molex 3 pin SMT 43650-310
+  - Changed drill from 2.3mm to 2.2mm to get a tighter fit
+  - Increased pads from 1.6764 x 0.8128 to 2.54 x 1.27, slid further back under where the pin would be
+- Molex 2 pin Sabre power
+  - Changed holes to 3.7mm diameter, square so they overlap
+- Power netclass
+  - Increased width to 60mil (~1.5mm)
+  - Updated all +5v wires to at least this width
+
+
+  
 # vA.2
 
 ### Problems fixed
@@ -10,6 +37,11 @@
 ### Not fixed
 - Missing values -- none of the values showed up; presumably they don't print tValues.
 - Markers on DC jack didn't show up; removed the DC jack instead
+
+
+
+
+
 
 # vA.1
 
