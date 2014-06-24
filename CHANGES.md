@@ -12,6 +12,7 @@
 - Some of the vias are pretty close to other solder pads... might be OK
 - Could maybe mount the big capacitor on its side
 - Could probably increase the size of the pads on the main power connector and run them together
+- 0805 pads could be bigger -- kind hard to solder to them
 
 ### Fixes
 - Molex 3 pin SMT 43650-310
