@@ -40,8 +40,8 @@ void loop()
     rainbow(strip1, counter);
     rainbow(strip2, counter);
     rainbow(strip3, counter);
+		delay(20);
 	}
-	delay(20);
 }
 
 static void setupStrip(Adafruit_NeoPixel &pixel_strip)
