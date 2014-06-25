@@ -1,0 +1,8 @@
+#!/bin/zsh -euf
+
+SparkID=48ff6a065067555014372387
+PWD=$0:h
+cd "$PWD"
+
+spark flash $SparkID *.ino *.cpp *.h
+
