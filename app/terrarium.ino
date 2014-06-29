@@ -24,24 +24,98 @@ static void setupStrip(Adafruit_NeoPixel &strip);
 static void rainbow(Adafruit_NeoPixel &strip, uint16_t counter);
 static uint32_t Wheel(Adafruit_NeoPixel &strip, byte WheelPos);
 
+typedef enum Mode {
+    SolidColorMode,
+    RainbowMode,
+} Mode;
+
+Mode CurrentMode = RainbowMode;
+
+static uint32_t PrimaryColor = Adafruit_NeoPixel::Color(130, 0, 190);
+
+static uint32_t ParseColor(String str)
+{
+    uint8_t r = 0, g = 0, b = 0;
+    
+    int commaIndex = str.indexOf(',');
+    if (commaIndex > 0) {
+        String redString = str.substring(0, commaIndex);
+        r = redString.toInt();
+        
+        //  Search for the next comma just after the first
+        int secondCommaIndex = str.indexOf(',', commaIndex+1);
+        if (secondCommaIndex >= 0) {
+            String greenString = str.substring(commaIndex+1, secondCommaIndex);
+            g = greenString.toInt();
+
+            String blueString = str.substring(secondCommaIndex+1); // To the end of the string
+            b = blueString.toInt();
+        } else {
+            String greenString = str.substring(commaIndex+1, secondCommaIndex);
+            g = greenString.toInt();
+        }
+    } else {
+        // One value -- do grayscale
+        r = g = b = str.toInt();
+    }
+    return Adafruit_NeoPixel::Color(r, g, b);
+}
+
+static int SetMode(String args)
+{
+    switch (args[0]) {
+        case 'r':
+            CurrentMode = RainbowMode;
+            break;
+        case 's':
+            CurrentMode = SolidColorMode;
+            break;
+        default:
+            break;
+    }
+    return CurrentMode;
+}
+
+// TOOD: Store the color in NVRAM somehow?
+static int SetPrimaryColor(String args)
+{
+    PrimaryColor = ParseColor(args);
+    return PrimaryColor;
+}
+
 void setup()
 {
+  Spark.function("mode", SetMode);
+  Spark.function("set_color", SetPrimaryColor);
+	
 	setupStrip(strip0);
 	setupStrip(strip1);
 	setupStrip(strip2);
 	setupStrip(strip3);
 }
 
+static uint32_t Counter = 0;
+
 void loop()
 {
-	uint16_t counter;
-  for (counter = 0; counter < 256; counter++) {
-    rainbow(strip0, counter);
-    rainbow(strip1, counter);
-    rainbow(strip2, counter);
-    rainbow(strip3, counter);
-		delay(20);
+	switch (CurrentMode) {
+		case SolidColorMode:
+		solid(strip0, PrimaryColor);
+		solid(strip1, PrimaryColor);
+		solid(strip2, PrimaryColor);
+		solid(strip3, PrimaryColor);
+		break;
+		
+		case RainbowMode:
+		rainbow(strip0, Counter);
+		rainbow(strip1, Counter);
+		rainbow(strip2, Counter);
+		rainbow(strip3, Counter);
+		break;
 	}
+	
+	delay(20);
+	Counter++;
 }
 
 static void setupStrip(Adafruit_NeoPixel &pixel_strip)
@@ -50,6 +124,17 @@ static void setupStrip(Adafruit_NeoPixel &pixel_strip)
 	pixel_strip.begin();
 	pixel_strip.show();
 }
+
+static void solid(Adafruit_NeoPixel &pixel_strip, uint32_t color)
+{
+  uint16_t i;
+
+	for(i=0; i<pixel_strip.numPixels(); i++) {
+		pixel_strip.setPixelColor(i, color);
+	}
+  pixel_strip.show();
+}
+
 static void rainbow(Adafruit_NeoPixel &pixel_strip, uint16_t counter)
 {
   uint16_t i;
