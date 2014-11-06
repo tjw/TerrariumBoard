@@ -5,18 +5,15 @@ SOURCE_DIR=$(shell pwd)
 SOURCES=$(SOURCE_DIR)/*.h $(SOURCE_DIR)/*.cpp $(SOURCE_DIR)/*.ino
 
 .PHONY: all
-all: compile
-	
-.PHONY: compile
-compile:
-	mkdir -p build
-	(cd build; spark compile $(SOURCES))
+all: app.bin
+
+app.bin: $(SOURCES)
+	spark compile $(SOURCES) --saveTo app.bin
 
 .PHONY: clean
 clean:
-	rm -rf build
+	rm app.bin
 
 .PHONY: flash
-flash:
-	spark flash $(SparkID) $(SOURCES)
-	
+flash: app.bin
+	spark flash $(SparkID) --usb app.bin
